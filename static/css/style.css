@@ -1,0 +1,40 @@
+.container {
+    width: 60%;
+    margin-top: 2rem;
+}
+.display {
+    display: flex;
+}
+.display p {
+    width: 50%;
+    align-self: center;
+}
+h1, h6 {
+    text-align: center;
+}
+.input-group-text {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 650px) {
+    .container {
+        width: 95%;
+    }
+    .display {
+        flex-direction: column;
+    }
+    .display p {
+        width: 70%;
+        text-align: center;
+    }
+    .input-group {
+        display: flex;
+        flex-direction: column;
+    }
+    .input-group > .form-control {
+        width: 100%;
+    }
+    .input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback){
+        margin-left: 0;
+    }
+}
