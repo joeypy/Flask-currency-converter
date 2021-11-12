@@ -12,7 +12,7 @@
 </head>
 <body>
 
-    <div class="container">
+    <main class="container">
         <h1>Conversor de Divisas y Bs.</h1>
         <h6><small>Tasa actual del <strong>Banco Central de Venezuela</strong></small></h6>
         <hr>
@@ -28,8 +28,11 @@
             <p>1 USD = <span id="tasa">{{ tasa }}</span> Bs.</p>
             <p>1 Bs. = <span id="usd_eq">0</span> USD</p>
         </div>
-    </div>
+    </main>
 
+    <footer class="text-center fixed-bottom bg-secondary">
+        <p class="text-white mt-3">Hecho por <a href="https://github.com/joeypy" class="text-white" target="_blank" >Joseph Boscán</a>.</p>
+    </footer>
     <script src="../static/js/main.js"></script>
 </body>
 </html>
